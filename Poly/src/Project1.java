@@ -22,10 +22,10 @@ public class Project1 {
 		
 		Vector v1 = new Vector();
 		FormatProcess e1 = new FormatProcess();
-		e1.removeSmallBracket(stringInput,v1);
-		
-		int array[]=e.getnum1(str1);
-		System.out.printf("%d%d",array[0],array[1]);
+		e1.symbolHandle(stringInput,v1);
+		Calculator e2 = new Calculator();
+		e2.calculate(v1);
+		System.out.println("The Vector v1 is:\n\t"+v1); 
 	}
     
 }

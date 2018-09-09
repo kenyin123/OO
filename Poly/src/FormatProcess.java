@@ -42,13 +42,4 @@ public class FormatProcess {
 			}
 		}
 	}
-	/*
-	public void stringToInt(Vector v1) {
-	    int i = 0;
-	    int sizeOfVector = 0;
-	    for (i = 0; i < sizeOfVector ; i++ ) {
-	        
-	    }
-	}
-	*/
 }
