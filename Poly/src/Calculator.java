@@ -15,7 +15,7 @@ public class Calculator {
         index2++;
         index1 = index2;
         while(index2 < sizeOfVector) { //maybe wrong
-            if(v1.get(index2) == "+"|v1.get(index2) == "-" |index2 == sizeOfVector-1) {
+            if(v1.get(index2) == "+"||v1.get(index2) == "-" ||index2 == sizeOfVector-1) {
                 if(symbol == "+") {
                     while(index1<index2) {
                         if(map.get(v1.get(index1+1)) == null) {

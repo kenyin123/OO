@@ -31,7 +31,7 @@ public class FormatProcess {
 		int i=0,indexBefore=0;
 		String tmpString;
 		for (i = 0; i < stringInput.length()-1; i++) {    
-			if((stringInput.charAt(i) == '+'| stringInput.charAt(i) == '-')&&(i!=stringInput.length())) {
+			if((stringInput.charAt(i) == '+'|| stringInput.charAt(i) == '-')&&(i!=stringInput.length())) {
 			    tmpString = stringInput.substring(indexBefore, i-1);
 			    removeBracket(tmpString,v1);
 			    v1.addElement(stringInput.charAt(i));
