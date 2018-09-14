@@ -8,7 +8,7 @@ public class Calculator {
         String symbol;
         Map map = new HashMap();
         while(v1.get(index2) != "+"&& v1.get(index2) != "-") {
-            map.put(v1.get(index2+1),v1.get(index2));//why wrong??
+            map.put(v1.get(index2+1),v1.get(index2)); //why wrong??
             index2+=2;
         }
         symbol = (String)v1.get(index2);

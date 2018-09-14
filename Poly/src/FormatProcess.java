@@ -1,19 +1,5 @@
 import java.util.Vector;
 public class FormatProcess {
-    /*
-    public int stringToInt(String numstr) {
-        int num;
-        int len = numstr.length();
-        if (numstr.charAt(0) == '+'){
-            num = Integer.parseInt(numstr.substring(1, len-1));    
-        }
-        else if(numstr.charAt(0) == '-'){
-            num = 0 - Integer.parseInt(numstr.substring(1, len-1));    
-        }
-        else num = Integer.parseInt(numstr.substring(0, len-1));
-        return num;
-    }
-    */
 	public void removeBracket(String polynomial,Vector v1) {
 		int len = polynomial.length();
 		polynomial = polynomial.substring(1,len-1); //maybe wrong
