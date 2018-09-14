@@ -4,7 +4,7 @@ public class FormatProcess {
 		int len = polynomial.length();
 		polynomial = polynomial.substring(1,len-1);
 		//not be familiar with String.length() and String.substring()
-		//this is to remove"{" and "}" 
+		//this is to remove"{" and "}"
 		polynomial = polynomial.replaceAll("\\(","");
 		polynomial = polynomial.replaceAll("\\)","");
 		String[] strArray = polynomial.split(",");
