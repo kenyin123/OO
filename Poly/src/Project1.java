@@ -7,6 +7,7 @@ public class Project1 {
         stringInput=stringInput.replaceAll(" ","");
 		 
         Vector v1 = new Vector();
+        System.out.println("The Vector v1 is:\n\t"+v1); 
         FormatProcess e1 = new FormatProcess();
         e1.symbolHandle(stringInput,v1);
         Calculator e2 = new Calculator();

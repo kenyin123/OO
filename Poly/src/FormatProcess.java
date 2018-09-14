@@ -19,8 +19,8 @@ public class FormatProcess {
 		polynomial = polynomial.substring(1,len-1); //maybe wrong
 		//not be familiar with String.length() and String.substring()
 		//this is to remove"{" and "}"
-		polynomial = polynomial.replaceAll("(","");
-		polynomial = polynomial.replaceAll(")","");
+		polynomial = polynomial.replaceAll("\\(","");
+		polynomial = polynomial.replaceAll("\\)","");
 		String[] strArray = polynomial.split(",");
 		//String[] numArray;
 		for (String tmp:strArray) {
@@ -30,15 +30,15 @@ public class FormatProcess {
 	public void symbolHandle(String stringInput,Vector v1) {
 		int i=0,indexBefore=0;
 		String tmpString;
-		for (i = 0; i < stringInput.length()-1; i++) {    
-			if((stringInput.charAt(i) == '+'|| stringInput.charAt(i) == '-')&&(i!=stringInput.length())) {
-			    tmpString = stringInput.substring(indexBefore, i-1);
+		for (i = 0; i < stringInput.length(); i++) {    
+			if((stringInput.charAt(i) == '+'|| stringInput.charAt(i) == '-')&&(i!=stringInput.length()-1)) {
+			    tmpString = stringInput.substring(indexBefore, i);
 			    removeBracket(tmpString,v1);
 			    v1.addElement(stringInput.charAt(i));
 			    indexBefore = i+1;
 			}
 			if(i == stringInput.length()-1) {
-			    tmpString = stringInput.substring(indexBefore, i);
+			    tmpString = stringInput.substring(indexBefore, i+1);//i+1???
                 removeBracket(tmpString,v1);
                 v1.addElement(stringInput.charAt(i));
 			}
