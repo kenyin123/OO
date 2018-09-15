@@ -14,7 +14,7 @@ public class Calculator {
         }
         */
         symbol = (String)v1.get(index2);
-        index2++;
+        index2++; 
         index1 = index2;
         while(index2 < sizeOfVector) { //maybe wrong
             if(v1.get(index2) == "+"||v1.get(index2) == "-" ||index2 == sizeOfVector-1) {
